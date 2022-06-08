@@ -21,7 +21,7 @@ contract NicMeta is ERC721Enumerable, Ownable {
     constructor(string memory initBaseURI, string memory initNotRevealedUri)
         ERC721("Nic Meta", "NM")
     {
-        setBaseURI(initBaseURI);
+        setBaseURI(initBaseURI); // ->>>> ipfs://QmUGVBRNwPaBz8uSeVKxcE8hh4nTVG8v5AF82UgUuyPFUz/
         setNotRevealedURI(initNotRevealedUri);
     }
     function mintNicMeta(uint256 tokenQuantity) public payable {
